@@ -1,0 +1,38 @@
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: #21c87a;
+    opacity: 0.8;
+    border-radius: 20%;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 5px #000000bd;
+    z-index: 105;
+}
+
+.js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.js .cd-top--fade-out {
+    opacity: .5
+}
+
+.js .cd-top:hover {
+    background-color: #ECD515;
+    color: white;
+    opacity: 1
+}

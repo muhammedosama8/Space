@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="img/icon.svg" rel="icon" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="https:////fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="css/cd-top-button.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home Page | Space</title>
+</head>
+<body>
+
+    <header >
+        <nav class=" fixed-top">
+            <div class="row">
+                <div class="col-lg-2 ">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="logo" style="padding-top: 6px;">
+                    </div>
+                </div>
+                <div class="col-lg-9 border-right">
+                    <div class="header-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                home <i class="fa fa-angle-down nav-item-icon"></i>
+                                <div id="home"  class="sub-menu-div home-menu border-menu animated fadeInUp">
+                                    <ul class="sub-menu ">
+                                        <li class="sub-menu-item "><a href="#">classic </a></li>
+                                        <li class="sub-menu-item "><a href="#">modern</a></li>
+                                        <li class="sub-menu-item "><a href="#">creative</a></li>
+                                        <li class="sub-menu-item "><a href="#">app</a></li>
+                                        <li class="sub-menu-item "><a href="#">demon</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                pages <i class="fa fa-angle-down nav-item-icon"></i>
+                                <div class="sub-menu-div animated border-menu fadeInUp page-menu" style="left: -345%;">
+                                    <div class="border-right section">
+                                        <h5>about</h5>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu-item "><a href="#">about agent </a></li>
+                                            <li class="sub-menu-item "><a href="#">about start up</a></li>
+                                            <li class="sub-menu-item "><a href="#">services agent </a></li>
+                                            <li class="sub-menu-item "><a href="#">services start up</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="border-right section">
+                                        <h5>career</h5>
+                                        <ul class="sub-menu ">
+                                            <li class="sub-menu-item "><a href="#">career signal </a></li>
+                                            <li class="sub-menu-item "><a href="#">career start up</a></li>
+                                            <li class="sub-menu-item "><a href="#">hire us </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="border-right section">
+                                        <h5>signin</h5>
+                                        <ul class="sub-menu ">
+                                            <li class="sub-menu-item "><a href="#">sign in </a></li>
+                                            <li class="sub-menu-item "><a href="#">sign up</a></li>
+                                            <li class="sub-menu-item "><a href="#">recovery account </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="section">
+                                        <h5>contact</h5>
+                                        <ul class="sub-menu ">
+                                            <li class="sub-menu-item "><a href="#">contact us</a> </li>
+                                            <li class="sub-menu-item "><a href="#">hire us </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <li class="nav-item">
+                                works <i class="fa fa-angle-down nav-item-icon"></i>
+                                <div class="sub-menu-div home-menu border-menu animated fadeInUp">
+                                    <ul class="sub-menu ">
+                                        <li class="sub-menu-item "><a href="#">classic </a></li>
+                                        <li class="sub-menu-item "><a href="#">full width layout</a></li>
+                                        <li class="sub-menu-item "><a href="#">single page</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"> blog </a>
+                            </li>
+                            <li class="nav-item">
+                                shop <i class="fa fa-angle-down nav-item-icon"></i>
+                                <div class="sub-menu-div home-menu border-menu animated fadeInUp" >
+                                    <ul class="sub-menu ">
+                                        <div class="shopDiv">
+                                            <a href="#"> <i class="fas fa-briefcase"></i>
+                                                <li class="sub-menu-item ">
+                                                    documentation
+                                                    <span class="item-span">development guids</span>
+                                                </li>
+                                            </a>
+                                        </div>
+
+                                        <div class="shopDiv">
+                                            <a href="#">
+                                                <i class="fas fa-industry"></i>
+                                                <li class="sub-menu-item ">
+                                                    get start
+                                                    <span class="item-span">components</span>
+                                                </li>
+                                            </a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-item-btn btn">
+                                    <i class="fas fa-user-circle"></i> Signin
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-1 row">
+                    <div class="icon col-lg-4">
+                        <a href="#" onclick="onCar()">
+                            <i class="fa fa-shopping-cart nav-item-i"></i>
+                        </a>
+                        <div id="onCar" class="onCar none border-menu animated fadeInUp">
+                            <ul class="sub-menu ">
+                               <a href="#">
+                                   <li class="sub-menu-item "><i class="fa fa-shopping-basket u-icon__inner"></i>classic </li>
+                               </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="icon col-lg-4">
+                        <a href="#" id="onSearch">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <div  class="none search border-menu animated fadeInUp">
+                            <input type="text" name="search" placeholder="Search Name"><button class="btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleControls" class="carousel fadeInLeft" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#"><img src="img/1.PNG" alt="photo"/></a>
+                    <div class="carousel-caption">
+                        <h1 class="display-4 w-50">Grow faster</h1>
+                        <p class="lead w-50">Grow faster and succeed with Space.</p>
+                        <div class="w-50">
+                            <a class="btn btn-primary " href="#" tabindex="-1">Get Started</a>
+                            <a class="btn btn-purple" href="#" tabindex="0">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="img/2.PNG" alt="photo"/></a>
+                    <div class="carousel-caption">
+                        <h1 class="display-4 w-50">Sell business</h1>-->
+                        <p class="lead w-50">Sell your business with Space.</p>
+                        <div class="w-50">
+                            <a class="btn btn-primary " href="#" tabindex="-1">Get Started</a>
+                            <a class="btn btn-purple" href="#" tabindex="0">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="img/3.PNG" alt="photo"/></a>
+                    <div class="carousel-caption">
+                        <h1 class="display-4 w-50">Make it beautiful</h1>-->
+                        <p class="lead w-50">Make it beautiful. Make your own business.</p>
+                        <div class="w-50">
+                            <a class="btn btn-primary " href="#" tabindex="-1">Get Started</a>
+                            <a class="btn btn-purple" href="#" tabindex="0">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 wow fadeInLeft animated">
+                    <img src="img/4.1.PNG" alt="photo">
+                    <h3>Professional Design</h3>
+                    <p>Achieve virtually any look and layout from within the one template.</p>
+                </div>
+                <div class="col-lg-4 wow fadeInDown animated">
+                    <img src="img/4.2.PNG" alt="photo">
+                    <h3>Super-Light</h3>
+                    <p>Manage document assembly with sophisticated yet super-light templates.</p>
+                </div>
+                <div class="col-lg-4 wow fadeInRight animated">
+                    <img src="img/4.3.PNG" alt="photo">
+                    <h3>Unlimited Power</h3>
+                    <p>Find what you need in one template and combine features at will.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5" style="margin-right: 2rem">
+                    <span class="two-span">About Us</span>
+                    <h3>We always welcome keen to learn folks to our team</h3>
+                    <p> The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+                   <p>Now that your brand is all dressed up and ready to party, it's time to release it to the world. By the way, let's celebrate already.</p>
+                    <a href="#" class="btn btn-sm btn-primary ">learn more</a>
+                </div>
+                <div class="col-lg-6" style="position: relative;text-align: center">
+                    <div  class="row">
+                        <div class="col-lg-4">
+                            <img src="img/img1.jpg" alt="photo">
+                        </div >
+                        <div class="col-lg-7">
+                            <img src="img/img2.jpg" alt="photo">
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="img/img3.jpg" alt="photo">
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="img/img4.jpg" alt="photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="three">
+        <div class="container">
+            <div class="three-header">
+                <span>Pricing plans</span>
+                <h3>No additional costs. Pay for what you use.</h3>
+                <p>All our plans include a 14-day free trial. Money-back guarantee, cancel any time.</p>
+            </div>
+            <div class="w-xl-65">
+                <div class="card-sm-columns row  ">
+                    <div class="card col-lg-4 col-sm-6 wow fadeInLeft animated">
+                        <div class="card-header ">
+                            <h6 class="firstCardH6">Company</h6>
+                            <span class="firstCardSpan">65$</span>
+                            <p>per month</p>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                 <li>Community support</li>
+                                 <li>400+ pages</li>
+                                 <li>100+ header variations</li>
+                                 <li>20+ home page options</li>
+                            </ul>
+                            <a href="#">start free tiral</a>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-4 col-sm-6 wow fadeInRight animated" style="margin-left: 1.2rem;">
+                        <div class="card-header">
+                            <h6 class="secondCardH6">Enterprise</h6>
+                            <span class="secondCardSpan">Contact Us</span>
+                            <p>no user limit</p>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>Community support</li>
+                                <li>400+ pages</li>
+                                <li>100+ header variations</li>
+                                <li>20+ home page options</li>
+                                <li>Priority Support</li>
+                                <li>More features</li>
+                            </ul>
+                            <a href="#" style="background-color: #796eff">contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="three-footer">
+                <p> <span>*</span> We also offer a Free Plan for 1 user with basic features. <a href="#">Get Started Free.</a></p>
+            </div>
+        </div>
+    </section>
+    <hr class="hr">
+
+    <section class="four">
+        <div class="container">
+            <h4>Frequently Asked Questions</h4>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h6>Can I cancel at anytime?</h6>
+                    <p>Yes, you can cancel anytime no questions are asked while you cancel but we would highly appreciate if you will give us some feedback.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h6>My team has credits. How do we use them?</h6>
+                    <p>Once your team signs up for a subscription plan. enim eiusmod high life accusamus eoset dignissimos.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h6>How does Space's pricing work?</h6>
+                    <p>Our subscriptions are tiered. based on the number of people enim eiusmod high life accusamus terry richardson ad squid.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h6>How secure is Space?</h6>
+                    <p>Protecting the data you trust to Space is our first priority. at vero eoset dignissimos ducimus qui blanditiis.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h6>Do you offer discounts?</h6>
+                    <p>We've built in discounts at each tier for teams. leggings occaecat craft beer farm-to-table. raw denim aesthetic synth nesciunt.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h6>What is your refund policy?</h6>
+                    <p>We do not offer refunds apart leggings occaecat craft beer farm-to-table. raw leggings occaecat craft.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="hr">
+
+    <section class="five">
+        <div class="container">
+            <div class="five-header">
+                <span>News</span>
+                <h3>Read our news & blogs</h3>
+                <p>Our duty towards you is to share our experience we're reaching in our work path with you.</p>
+            </div>
+            <div class="w-xl-65">
+                <div class="card-sm-columns row">
+                    <div class="col-lg-3">
+                        <div class="card-body" style=" padding-bottom: 3.3rem;">
+                            <span>May 15, 2018</span>
+                            <a href="#">InVision design forward fund</a>
+                            <p class="mb-0">Clark Valberg is the founder and CEO of InVision.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <img src="img/avatar.jpg" alt="photo">
+                                <a href="#">Andrea Gard</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card-body">
+                            <span>May 22, 2018</span>
+                            <a href="#">Announcing a plan for small teams</a>
+                            <p class="mb-0">We've always believed that by providing a space</p>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <img src="img/avatar.jpg" alt="photo">
+                                <a href="#">James Austin</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card-body">
+                            <span>May 30, 2018</span>
+                            <a href="#">Design principles</a>
+                            <p class="mb-0">The biggest collections of design principles on the internet</p>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <img src="img/avatar.jpg" alt="photo">
+                                <a href="#">Charlotte Moore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="six">
+        <div class="container">
+            <div class="six-header">
+                <span>Subscribe</span>
+                <h3>Ready to get started?</h3>
+                <p>Want to see Space in action? Get started with Space for instant experience:</p>
+            </div>
+
+            <form class="form-row">
+                <div class="col-lg-4">
+                    <div class="icon">
+                        <span><i class="fa fa-user form__text-inner"></i></span>
+                    </div>
+                    <input type="text" autocomplete="false" name="username" placeholder="Name"/>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="icon">
+                        <span><i class="fa fa-envelope form__text-inner"></i></span>
+                    </div>
+                    <input type="text" name="email" placeholder="Email"/>
+                </div>
+
+                <div class="col-lg-4">
+                    <button type="submit">get started</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <button>English</button>
+                    <p class="small">All rights reserved. © Space. 2019 Htmlstream.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">About Agency</a></li>
+                        <li><a href="#">About Start-Up</a></li>
+                        <li><a href="#">Services Agency</a></li>
+                        <li><a href="#">Services Start-Up</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy & Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Classic</a></li>
+                        <li><a href="#">Single Product</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+
+
+
+                <div class="col-lg-2">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f min-width-3 text-center mr-2"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter min-width-3 text-center mr-2"></i>Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-dribbble min-width-3 text-center mr-2"></i>Dribbble</a></li>
+                        <li><a href="#"><i class="fab fa-github min-width-3 text-center mr-2"></i>GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <a href="#" class="cd-top js-cd-top"><i class="fa fa-chevron-up"></i></a>
+    <script src="js/jquery-3.3.1.min.js" ></script>
+    <script src="js/popper.min.js" ></script>
+    <script src="js/c.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/cd-top-button.js"></script>
+    <script src="js/js.js" ></script>
+    <script src="js/wow.js" ></script>
+    <script src="js/wow.min.js" ></script>
+
+<script>
+    document.getElementById('onSearch').onclick = function() {
+        document.querySelector('.search').classList.toggle('block');
+        document.querySelector('.search').classList.toggle('none');
+        document.querySelector('.onCar').classList.add('none');
+
+    };
+    $('.carousel').carousel({
+        interval: 5000
+    });
+</script>
+</body>
+</html>
